@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Task Tracker Watch</title>
+<style>
+  body { font-family: -apple-system, Helvetica, Arial, sans-serif; max-width: 640px; margin: 60px auto; padding: 0 20px; line-height: 1.6; color: #222; }
+  h1 { margin-bottom: 4px; }
+  h2 { margin-top: 32px; font-size: 1.1em; }
+  .updated { color: #666; }
+  a { color: #0645ad; }
+</style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: [September 29, 2026]</p>
+
+  <p>
+    Task Tracker Watch is a personal, non-commercial hobby project: custom
+    firmware on a single ESP32-S3 smartwatch device that I built and use
+    myself. It is not distributed to other users. This policy explains what
+    data it accesses and how that data is handled.
+  </p>
+
+  <h2>What data this project accesses</h2>
+  <p>
+    The watch connects to Google Calendar using OAuth 2.0, with read-only
+    access to calendar events (the app requests no write, sharing, or
+    modification permissions on your calendar).
+  </p>
+
+  <h2>Where data is stored</h2>
+  <p>
+    The OAuth refresh token and synced calendar event data are stored only
+    on the watch's own on-device flash storage (NVS). Nothing is uploaded
+    to any server other than Google's own Calendar API, which the watch
+    contacts directly to fetch event data.
+  </p>
+
+  <h2>Data sharing</h2>
+  <p>
+    No data is shared with, sold to, or processed by any third party.
+    There is no analytics, advertising, or tracking of any kind in this
+    project.
+  </p>
+
+  <h2>Data retention and deletion</h2>
+  <p>
+    Calendar data and the stored authorization token remain on the device
+    until it is reflashed or factory reset, at which point they are erased.
+    You can revoke this app's access at any time from your
+    <a href="https://myaccount.google.com/permissions">Google Account
+    permissions page</a>.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about this project or its data handling can be directed to:
+    [brodylloy@gmail.com]
+  </p>
+</body>
+</html>
